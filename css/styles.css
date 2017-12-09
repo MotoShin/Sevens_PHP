@@ -26,11 +26,11 @@ border:3px #000 solid;
 
 #box {
   position: absolute;
-  top: 145px;
+  top: 98px;
   left: 45px;
   background-color:#FF6666;
-  width:680px;
-  height:335px;
+  width:750px;
+  height:370px;
 }
 
 body {

@@ -48,6 +48,11 @@
     <input type="submit" value="リセット" name="reset">
     <input type="submit" value="確認" name="view">
   </form>
+  <div id=cpuHandNum>CPU's hands:
+    <?php
+      echo countCards($_SESSION['handsCPU']);
+    ?>
+  </div>
   <div id=box></div>
   <?php
     if ($_SESSION['turn'] == 1) {
@@ -72,7 +77,7 @@
       ?>
     </form>
   </div>
-  <div id=view><?php require("view.php"); ?></div>
+  <!-- <div id=view><?php require("view.php"); ?></div> -->
   <div id=field>
     <?php
       cardOutput($_SESSION['allCards']);

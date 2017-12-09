@@ -199,9 +199,20 @@
       }
     }
 
-    var_dump($possibleCards);
+    // var_dump($possibleCards);
 
     $tmp = arrayUpdate($possibleCards[0]['mark'] . "," . $possibleCards[0]['num'], $field, $hand);
 
     return $tmp;
+  }
+
+  function countCards($hands) {
+    $count = 0;
+    foreach ($hands as $card) {
+      if (!$card["isField"]) {
+        $count += 1;
+      }
+    }
+
+    return $count;
   }
